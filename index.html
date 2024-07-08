@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>স্বাধীন</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .terminal-prompt {
+      color: #06ff10ed;
+    }
+
+    .terminal-response {
+      color: #ffffff;
+    }
+
+    .highlight-red {
+      color: red;
+    }
+
+    .sh {
+      font-family: "Hind Siliguri", sans-serif;
+      text-shadow: 19px -3px 112px #00ffb0;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="flex justify-center press">
+    <h1 class="text-red absolute text-[#06ff10ed] text-[50px] top-10 sh Hind Siliguri">স্বাধীন</h1>
+  </div>
+  <div class="bg-gray-900 text-white h-screen flex items-center justify-center">
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-3xl">
+      <div id="terminal-output" class="bg-gray-900 p-2 rounded-t-lg font-mono overflow-y-auto"
+        style="max-height: 300px;">
+        <p class="terminal-response">স্বাধীন প্রোগ্রাম</p>
+      </div>
+      <div class="flex">
+        <div class="bg-gray-900 p-2 rounded-bl-lg text-green-500 font-mono">
+          স্বাধীন:~$
+        </div>
+        <div id="terminal-input" contenteditable="true"
+          class="bg-gray-900 text-green-500 font-mono w-full p-2 rounded-br-lg focus:outline-none"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
